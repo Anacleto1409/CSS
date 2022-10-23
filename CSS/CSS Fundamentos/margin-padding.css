@@ -1,0 +1,33 @@
+div{
+    border:5px solid red;
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20%;
+    padding-bottom: 10px;
+    padding-right:20px ;
+}
+
+div{
+    border:5px solid red;
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px 10px 20px;
+}
+p{
+    padding: 20px;
+    width: 100%;
+}
+.container{
+    background-color: lightcyan;
+    width: 300px;
+}
+.caixa-interna{
+    border: 5px;
+    background-color: cornflowerblue;
+    height: 20px;
+    padding: 20px;
+    margin: 10px 20px 10px; 
+}
