@@ -1,0 +1,207 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+    body {
+      background-color: #ffa0b4;
+      font-family: 'Karla', sans-serif;
+    }
+    .main {
+      display: block;
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .list {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .list-item {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+       supported by Chrome and Opera */
+      display: inline-block;
+      position: relative;
+      min-width: 90px;
+      min-height: 35px;
+      padding-top: 5px;
+      box-sizing: border-box;
+      font-size: 24px;
+      margin: 25px 10px;
+      opacity: 0.75;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .list-item:hover {
+      opacity: 0.9;
+    }
+    .title {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+       supported by Chrome and Opera */
+      position: absolute;
+      height: 20px;
+      left: 50%;
+      margin-left: 5px;
+      transform: translateX(-50%);
+      top: 40px;
+      z-index: 100;
+      text-transform: uppercase;
+      font-weight: 800;
+      overflow: hidden;
+      color: #ff4d78;
+      font-size: 20px;
+      transition: color 0.6s ease-in-out 0.2s;
+    }
+    .title #title-1 {
+      position: absolute;
+      color: white;
+    }
+    .indicator-circle {
+      display: block;
+      position: absolute;
+      background-color: #ffa0b4;
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      left: 25%;
+      top: 35px;
+      box-sizing: border-box;
+      border: solid #ff4d78 4px;
+      border-radius: 50%;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .indicator-circle .circ-fill {
+      position: absolute;
+      background: #ff4d78;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      top: 30px;
+      left: -2px;
+    }
+    .ind-circ-off {
+      transition: background-color 0.2s ease-in-out 0.2s;
+      background-color: #ff4d78;
+    }
+    .indicator {
+      display: block;
+      position: absolute;
+      background-color: #ff4d78;
+      margin: auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      left: 60%;
+      z-index: 30;
+      transform: translatex(-50%);
+      height: 60px;
+      width: 190px;
+      top: -60px;
+      border-radius: 5px;
+      transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out 0.2s, border-radius 0.4s ease-in-out;
+    }
+    .reset-top {
+      top: -60px !important;
+    }
+    .on {
+      border-radius: 50px;
+      background-color: #ff4d78;
+      -webkit-box-shadow: 2px 5px 20px 0px rgba(255, 77, 120, 0.75);
+      -moz-box-shadow: 2px 5px 20px 0px rgba(255, 77, 120, 0.75);
+      box-shadow: 2px 5px 20px 0px rgba(255, 77, 120, 0.75);
+    }
+    .reset {
+      display: block;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      right: 0;
+      color: #ff4d78;
+      cursor: pointer;
+    }
+    .id-selector {
+      position: absolute;
+      top: 51px;
+    }
+    .id-list-item {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+       supported by Chrome and Opera */
+      display: inline-block;
+      position: relative;
+      min-width: 90px;
+      min-height: 35px;
+      box-sizing: border-box;
+      font-size: 24px;
+      margin: 8px 10px;
+      margin-left: 30px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    </style>
+    
+    <div class="main">
+        <div class="title">
+            <div id="title-1">Select Role</div>
+            <div id="title-2">Select Role</div>
+        </div>
+        <div class="reset">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-repeat"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+        </div>
+        <div class="indicator-circle"><div class="circ-fill"></div></div>
+        <div class="list">
+            <div class="indicator">
+                <div class="id-selector">
+                    <!--<div class="id-list-item">Other</div><br>
+    <div class="id-list-item">Manager</div><br>
+    <div class="id-list-item">Developer</div><br>
+    <div class="id-list-item">Intern</div><br>-->
+                    <div class="id-list-item">Intern</div><br>
+                    <div class="id-list-item">Developer</div><br>
+                    <div class="id-list-item">Manager</div><br>
+                    <div class="id-list-item">Other</div><br>
+                </div>
+            </div>
+            <div class="list-item">Intern</div><br>
+            <div class="list-item">Developer</div><br>
+            <div class="list-item">Manager</div><br>
+            <div class="list-item">Other</div><br>
+        </div>
+    </div>
