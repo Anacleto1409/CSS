@@ -1,0 +1,20 @@
+ .container{
+    width:300 ;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+ }
+ .caixa-interna{
+    outline: 3px dashed blue;
+    border-width: 4px;
+    border-style:dashed;
+    border-color: red;
+    background-color: lightpink;
+    height:20px;
+    padding: 20px;
+ }
+ /* outline-style
+    outline-color
+    outline-width
+    outline-offset
+    ouline
