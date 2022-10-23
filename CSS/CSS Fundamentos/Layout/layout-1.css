@@ -33,6 +33,57 @@
     margin: 0 auto;
     font-size: 20px;
 }
-img{
-    
+img
+{
+float:left    
 }
+
+.bebida
+{
+    list-style-type: none;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.item
+{
+    width: 33px;
+    padding: 10px;
+    float: left;
+}
+.bebida:before{
+    content: '';
+    display: block;
+    clear: left;
+}
+
+.container
+{
+    height: 600px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'header header'
+    'maça coelho boneco'
+    'maça coelho boneco'
+    'footer footer footer' ;
+}
+.item{
+    color: aquamarine;
+    border-radius: 3px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+  #water {
+  grid-column-start:3
+  }
