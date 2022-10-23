@@ -1,4 +1,4 @@
-position
+.position
 {
     position: static;
     position: relative;
@@ -6,4 +6,33 @@ position
     position: inherit;
     position: fixed;
 }
-
+.container
+{
+    display: block;
+}
+.container2
+{
+    display:inline;
+}
+.container3
+{
+    display:inline-block;
+}
+.content
+{
+    z-index:1;
+}
+.float
+{
+    float: right;
+}
+.bebida
+{
+    list-style-type: none;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+img{
+    
+}
