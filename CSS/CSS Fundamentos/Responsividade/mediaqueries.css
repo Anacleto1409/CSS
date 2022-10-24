@@ -1,0 +1,22 @@
+/*
+@
+Breakpoints
+Meio(all,print,screen ou speech)
+
+Suporte a operadores lógicos (and,or,not)
+
+Aparelhos pequenos:
+@media only screen and {max-width: 600px){...}
+
+Aparelhos pequenos(large phones, maiores que 600px:
+@media only screen and {min-width: 600px){...}
+
+Aparelhos médios:
+@media only screen and {min-width: 768px){...}
+
+Aparelhos grandes:
+@media only screen and {min-width: 992px){...}
+
+Aparelhos bem grandes:
+@media only screen and {min-width: 1200px){...}
+

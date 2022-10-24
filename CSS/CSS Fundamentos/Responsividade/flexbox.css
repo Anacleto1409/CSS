@@ -1,0 +1,96 @@
+
+.exe1{ 
+justify-content: flex-end;
+}
+
+.exe2{
+justify-content: center;
+}
+
+.exe3and4{
+justify-content: space-around;
+justify-content: space-between;
+}
+
+.exe5{
+align-items: flex-end;
+}
+
+.exe6{ 
+align-items: center;
+justify-content: center;
+}
+.exe7{
+align-items:flex-end;
+justify-content: space-around;
+}
+
+.exe8{
+flex-direction: row-reverse;
+}
+
+.exe9{
+flex-direction: column;
+}
+
+.exe10{ 
+flex-direction: row-reverse;
+justify-content: flex-end;
+}
+
+.exe11{
+flex-direction: column;
+justify-content: flex-end;
+}
+
+.exe12{
+flex-direction: column-reverse;
+justify-content: space-between;
+}
+.exe13{
+flex-direction: row-reverse;
+justify-content: center;   
+align-items: flex-end;
+}
+.exe14and15{
+order: 3;
+order: -3;
+}
+.exe16{
+align-self: flex-end;
+}
+
+.exe17{ 
+align-self: flex-end;
+order: 5;
+}
+
+.exe18{
+flex-wrap: wrap
+}
+
+.exe19{
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.exe20{
+flex-flow: column wrap;
+}
+
+.exe21and22{
+align-content: flex-start;
+align-content: flex-end;
+}
+
+.exe23{
+flex-direction: column-reverse;
+align-content: center; 
+}
+
+.exe24{
+flex-direction:column-reverse;
+flex-wrap:wrap-reverse;
+justify-content:center;
+align-content:space-between
+} 
